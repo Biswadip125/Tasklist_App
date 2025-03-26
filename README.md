@@ -1,4 +1,4 @@
-# Todo App
+# Tasklist App
 
 This is a simple Todo application with a React frontend and a Node.js + Express + SQLite backend.
 
@@ -57,21 +57,39 @@ Make sure you have the following installed:
     ✅ **Get All Todos**
 
     -   `GET /todos`
-    -   Response: An array of todo objects. Example: `[{ id: 1, text: "Buy groceries", completed: false }, { id: 2, text: "Finish project", completed: true }]`
+    -   Response: An array of todo objects. Example:
+        ```json
+        [
+          { "id": 1, "text": "Buy groceries", "completed": false },
+          { "id": 2, "text": "Finish project", "completed": true }
+        ]
+        ```
 
     ➕ **Add a New Todo**
 
     -   `POST /todos`
     -   `Content-Type: application/json`
-    -   Request Body: `{ text: "Your todo text" }`
-    -   Response: The newly created todo object. Example: `{ id: 3, text: "Your todo text", completed: false }`
+    -   Request Body:
+        ```json
+        { "text": "Your todo text" }
+        ```
+    -   Response: The newly created todo object. Example:
+        ```json
+        { "id": 3, "text": "Your todo text", "completed": false }
+        ```
 
     ✏️ **Update a Todo**
 
     -   `PUT /todos/:id`
     -   `Content-Type: application/json`
-    -   Request Body: `{ text: "Updated todo text", completed: true/false }` (both or one of the fields are optional)
-    -   Response: The updated todo object. Example: `{ id: 1, text: "Updated todo text", completed: true }`
+    -   Request Body: (both or one of the fields are optional)
+        ```json
+        { "text": "Updated todo text", "completed": true/false }
+        ```
+    -   Response: The updated todo object. Example:
+        ```json
+        { "id": 1, "text": "Updated todo text", "completed": true }
+        ```
 
     ❌ **Delete a Todo**
 
@@ -87,10 +105,3 @@ Make sure you have the following installed:
 ## 📜 License
 
 This project is licensed under the MIT License.
-
-    -   `PUT /todos/:id`
-    -   `Content-Type: application/json`
-
-    ❌ **Delete a Todo**
-
-    -   `DELETE /todos/:id`
