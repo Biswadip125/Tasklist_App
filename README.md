@@ -28,10 +28,11 @@ Make sure you have the following installed:
 3. **Install frontend Dependencies**
    
     ```sh
-    cd frontend
-    npm i
+   cd frontend
+   npm i
 
-5. ▶️ Running the Server
+4. ▶️ Running the Server
+   
    **Start the backend server**
 
    ```sh
@@ -39,10 +40,8 @@ Make sure you have the following installed:
 
   **Start the frontend server**
 
-   ```sh
+  ```sh
   npm run dev
 
-   
 
-    
-    
+
