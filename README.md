@@ -27,7 +27,7 @@ Make sure you have the following installed:
 
 3. **Install frontend Dependencies**
    
-    ```sh
+   ```sh
    cd frontend
    npm i
 
@@ -38,10 +38,23 @@ Make sure you have the following installed:
    ```sh
    npm start
 
-  **Start the frontend server**
+   **start the frontend server**
+   ```sh
+    npm run dev
 
-  ```sh
-  npm run dev
+5. **🛠 API Routes**
+✅ Get All Todos
 
+GET /todos
 
+➕ Add a New Todo
+POST /todos
+Content-Type: application/json
+
+✏️ Update a Todo
+PUT /todos/:id
+Content-Type: application/json
+
+❌ Delete a Todo
+DELETE /todos/:id
 
