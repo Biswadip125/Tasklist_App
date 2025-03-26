@@ -1,4 +1,4 @@
-# Todo App
+# Tasklist App
 
 This is a simple Todo application with a React frontend and a Node.js + Express + SQLite backend.
 
