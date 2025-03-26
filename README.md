@@ -45,16 +45,19 @@ Make sure you have the following installed:
 5. **🛠 API Routes**
 ✅ Get All Todos
 
-GET /todos
+- GET /todos
 
 ➕ Add a New Todo
-POST /todos
-Content-Type: application/json
+
+- POST /todos
+- Content-Type: application/json
 
 ✏️ Update a Todo
-PUT /todos/:id
-Content-Type: application/json
+
+- PUT /todos/:id
+- Content-Type: application/json
 
 ❌ Delete a Todo
-DELETE /todos/:id
+
+- DELETE /todos/:id
 
