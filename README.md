@@ -57,13 +57,36 @@ Make sure you have the following installed:
     ✅ **Get All Todos**
 
     -   `GET /todos`
+    -   Response: An array of todo objects. Example: `[{ id: 1, text: "Buy groceries", completed: false }, { id: 2, text: "Finish project", completed: true }]`
 
     ➕ **Add a New Todo**
 
     -   `POST /todos`
     -   `Content-Type: application/json`
+    -   Request Body: `{ text: "Your todo text" }`
+    -   Response: The newly created todo object. Example: `{ id: 3, text: "Your todo text", completed: false }`
 
     ✏️ **Update a Todo**
+
+    -   `PUT /todos/:id`
+    -   `Content-Type: application/json`
+    -   Request Body: `{ text: "Updated todo text", completed: true/false }` (both or one of the fields are optional)
+    -   Response: The updated todo object. Example: `{ id: 1, text: "Updated todo text", completed: true }`
+
+    ❌ **Delete a Todo**
+
+    -   `DELETE /todos/:id`
+    -   Response: A success message or an empty response on successful deletion.
+
+## 🔗 Technologies Used
+
+-   Frontend: React, Tailwind CSS
+-   Backend: Node.js, Express.js
+-   Database: SQLite
+
+## 📜 License
+
+This project is licensed under the MIT License.
 
     -   `PUT /todos/:id`
     -   `Content-Type: application/json`
